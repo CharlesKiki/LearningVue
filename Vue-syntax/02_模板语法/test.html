@@ -1,0 +1,61 @@
+<!--
+ * @Author: your name
+ * @Date: 2018-05-13 21:24:57
+ * @LastEditTime : 2020-02-14 13:45:37
+ * @LastEditors  : Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \VueTest\02_模板语法\test.html
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>02_模板语法</title>
+</head>
+<body>
+
+
+<div id="app">
+  <h2>1. 双大括号表达式</h2>
+  <p>{{content}}</p>              <!-- textContent -->
+  <p>{{content.toUpperCase()}}</p><!-- textContent -->
+  <p v-text="content"></p>        <!-- textContent -->
+  <p v-html="content"></p>        <!-- innerHTML -->
+
+  <h2>2. 指令一: 强制数据绑定</h2>
+  <a href="url">访问指定站点</a><br>         <!-- HTML_syntax -->
+  <img src="img">                           <!-- HTML_syntax -->
+  <img v-bind:src="img">                    <!-- Vue_syntax -->
+  <a v-bind:href="url">访问指定站点2</a><br> <!-- Vue_syntax -->
+  <a :href="url">访问指定站点2</a><br>       <!-- Vue_syntax -->
+
+  <h2>3. 指令二: 绑定事件监听</h2>
+  <button onclick="">JS点我</button>                <!-- JavaScript_syntax -->
+  <button v-on:click="test">Vue点我</button>        <!-- Vue_syntax -->
+  <button @click="test_2(content)">Vue点我</button> <!-- Vue_syntax -->
+
+</div>
+
+
+<script type="text/javascript" src="../js/vue.js"></script>
+<script type="text/javascript">
+
+  new Vue({
+    el: '#app',
+    data: {
+      content: '<a href=> NBA I Love This Game</p>',
+      url: 'http://www.atguigu.com',
+      img:'https://cn.vuejs.org/images/logo.png'
+    },
+    methods: {
+      test () {
+        alert('好啊!!!')
+      },
+      test_2(params) {
+        alert(params)
+      }
+    }
+  })
+</script>
+</body>
+</html>

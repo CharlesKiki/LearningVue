@@ -1,0 +1,55 @@
+/* 页面整体CSS*/
+*{margin:0;
+  padding:0;
+  } 
+body { width:100%; height:100%; font: 12px  "宋体", Helvetica, sans-serif; background: #fff; }
+/* 设置所有图片的边框为0*/
+img {
+	border: 0;
+}
+/* 设置最外层居中显示，实现让整个页面居中显示*/
+#top ,#mid, #footer {
+    margin: auto;
+	width: 766px;
+}
+/* 设置页面的链接属性*/
+a:link {
+	color: #000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #999;
+}
+a:hover {
+	text-decoration: underline;
+	color: #CCC;
+}
+a:active {
+	text-decoration: none;
+	color: #666;
+}
+/* 设置左浮动的标签*/
+#menu , #contenone,#left1,#showone ,#logo ,#linetwo,#contenbai, #people {
+float:left;
+}
+/* 设置右浮动的标签*/
+#righ{
+float:right;
+}
+/* 设置需要指定大小尺寸的标签*/
+#welcomeword {
+ height: 65px;
+}
+
+#contenone {
+ width: 280px;
+}
+
+#linetwo {
+ width: 8px;
+}
+
+#people{
+ width: 95px;
+}

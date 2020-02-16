@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vue 测试实例</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- Vue JavaScript -->
+    <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+</head>
+
+<body>
+    <!-- 全局组件 -->
+    <div id="app_one">
+        <Customcomponent_one></Customcomponent_one>
+    </div>
+
+    <!-- 局部组件 -->
+    <div id="app_two">
+        <Customcomponent_two></Customcomponent_two>
+    </div>
+
+    <script>
+        //注册全局组件
+        Vue.component('Customcomponent_one', {
+                template: '<h1>全局自定义组件!</h1>'
+            })
+            // 创建根实例
+        new Vue({
+            el: '#app_one'
+        })
+
+
+        /*
+         *局部组件
+         *Vue对组件的概念是基于模板的，一个局部组件实际上就是   
+         *多个模板相互组合而成的组件，其中各部分称之为局部组建
+         */
+        var Child = {
+                template: '<h1>局部自定义组件!</h1>'
+            }
+            // 创建根实例
+        new Vue({
+            el: '#app_two',
+            components: {
+                // Child 将只在父模板可用
+                'Customcomponent_two': Child
+            }
+        })
+    </script>
+</body>
+
+</html>

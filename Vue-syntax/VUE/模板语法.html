@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vue 测试实例</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <!-- Vue JavaScript -->
+    <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+</head>
+<!-- CSS description -->
+<style>
+    .class1 {
+        background: #424;
+        color: #eee;
+    }
+</style>
+
+<body>
+    <!-- 使用 v-html 指令用于输出 html 代码 -->
+    <div id="test_one">
+        <div v-html="message"></div>
+    </div>
+
+    <!-- Vue对class属性的控制测试 -->
+    <div id="test_two">
+        <!-- for 属性规定 label 与哪个表单元素绑定。 -->
+        <!-- v-model属性input标签的输入对Vue对象的属性有绑定效果 -->
+        <label for="r1">修改颜色</label> <input type="checkbox" v-model="use" id="r1">
+        <br><br>
+        <!-- v-bind令class属性以键值对的形式被绑定 -->
+        <div v-bind:class="{'class1': use}">
+            v-bind:class 绑定DOM的class属性
+        </div>
+    </div>
+
+    <script>
+        new Vue({
+            el: "#test_one",
+            data: {
+                message: "<h1>打印出一个HTML标签内容。</h1>"
+            }
+        });
+
+
+        new Vue({
+            el: '#test_two',
+            data: {
+                use: false
+            }
+        });
+    </script>
+</body>
+
+</html>

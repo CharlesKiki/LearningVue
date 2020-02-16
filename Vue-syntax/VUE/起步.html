@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vue 测试实例</title>
+    <!-- Required meta tags -->
+	<meta charset="utf-8">
+    <!-- Vue JavaScript -->
+	<script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+</head>
+<body>
+	<div id="vue_element">
+		<h1>site : {{site}}</h1>
+		<h1>url : {{url}}</h1>
+		<h1>{{details()}}</h1>
+	</div>
+    <script type="text/javascript">
+        //构造数据对象，注意，这不是JSON，是一个JS对象
+        var data = {
+            site: "VueSite",
+            url: "localhost",
+            port: "8080"
+        };
+        var vm = new Vue({
+            el: "#vue_element",
+            data: data, //为Vue对象的数据元素赋值
+            methods: {
+                details: function() {
+                    return "由Vue方法返回的值。";
+                }
+            }
+        });
+        // VM对引用的内部机制
+        document.write("检查数据元素是否和Vue绑定匹配:" + (vm.site === data.site) + "<br>"); // true，它们引用相同的对象！
+        // Vue对象的属性和原始数据有绑定关系s
+        vm.site = "SiteChange";
+        document.write("Site值重写:" + data.site + "<br>"); // SiteChange
+        // 修改原始数据也会导致Vue属性的概念
+        data.port = 8000;
+        document.write("修改数据的值:" + vm.port + "<br>"); // 8000
+
+        // Vue对象自带一些特有属性和方法 可以方便的使用
+        document.write("检查Vue对象值和原始数据是否一致: " + (vm.$data === data) + "<br>"); // true
+        document.write("检查Vue对象和DOM对象是否一致: " + (vm.$el === document.getElementById("vue_element"))); // true
+    </script>
+</body>
+</html>

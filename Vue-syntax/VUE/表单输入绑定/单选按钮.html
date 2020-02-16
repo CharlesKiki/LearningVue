@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vue 测试实例</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- Vue JavaScript -->
+    <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+</head>
+
+<body>
+    <!-- v-model实际上指向Vue对象中的对象属性，其中，input的value被赋值给该对象 -->
+    <div id="example-4">
+        <input type="radio" id="one" value="One" v-model="picked">
+        <label for="one">One</label>
+        <br>
+        <input type="radio" id="two" value="Two" v-model="picked">
+        <label for="two">Two</label>
+        <br>
+        <span>Picked: {{ picked }}</span>
+    </div>
+    <script type="text/javascript">
+        new Vue({
+            el: '#example-4',
+            data: {
+                picked: ''
+            }
+        })
+    </script>
+</body>
+
+</html>

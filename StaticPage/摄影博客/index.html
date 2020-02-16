@@ -1,0 +1,165 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3. org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <title>摄影网站</title>
+  <script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div id="top">
+    <div id="logo"><img src="images/index_01.jpg"></div>
+    <div id="banner"><img src="images/index_02.jpg" /></div>
+  </div>
+  <div id="mid">
+    <div id="left1">
+      <div class="menu">
+        <script>
+          if (!document.layers && !document.all) event = "test"
+          function showtip2(current, e, text) {
+            if (document.all && document.readyState == "complete")//针对IE浏览器
+            {
+              document.all.tooltip2.innerHTML = '<marquee style="border:1px solid black">' +
+                text + '</marquee>'
+              document.all.tooltip2.style.pixelLeft = event.clientX + document.body.scrollLeft + 10
+              document.all.tooltip2.style.pixelTop = event.clientY + document.body.scrollTop + 10
+              document.all.tooltip2.style.visibility = "visible"
+            }
+            else if (document.layers) //针对Netscape浏览器
+            {
+              document.tooltip2.document.nstip.document.write('<b>' + text + '</b>')
+              document.tooltip2.document.nstip.document.close()
+              document.tooltip2.document.nstip.left = 0
+              currentscroll = setInterval("scrolltip()", 100)
+              document.tooltip2.left = e.pageX + 10
+              document.tooltip2.top = e.pageY + 10
+              document.tooltip2.visibility = "show"
+            }
+          }
+          function hidetip2() {
+            if (document.all)
+              document.all.tooltip2.style.visibility = "hidden"
+            else if (document.layers) {
+              clearInterval(currentscroll)
+              document.tooltip2.visibility = "hidden"
+            }
+          }
+          function scrolltip() {
+            if (document.tooltip2.document.nstip.left >=
+              -document.tooltip2.document.nstip.document.width)
+              document.tooltip2.document.nstip.left -= 5
+            else
+              document.tooltip2.document.nstip.left = 150
+          }
+        </script>
+        <div id="tooltip2" style="position:absolute;clip:rect(0 150 50 0);width:150px;
+background-color:#99FF99; top: 31px; left: 103px; visibility: hidden; height: 13px">
+        </div>
+        <a href="#" onMouseOver="showtip2(this,event,'这是本网站的首页')" onMouseOut="hidetip2()">　　<img
+            src="images/index_04.jpg" /></a>
+      </div>
+      <div class="menu">　　<a href="/index.html"><img src="images/index_06.jpg" /></a> </div>
+      <div class="menu">　　<a href="/index.html"><img src="images/index_14.jpg" /></a> </div>
+      <div class="menu">　　<a href="/index.html"><img src="images/index_25.jpg" /></a> </div>
+    </div>
+    <div id="righ">
+      <div id="picone">
+        <script type="text/javascript">
+          AC_FL_RunContent('codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0', 'width', '533', 'height', '162', 'src', '/flash/banner', 'quality', 'high', 'pluginspage', 'http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash', 'movie', 'flash/banner'); //end AC code
+        </script><noscript><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+            codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="533"
+            height="162">
+            <param name="movie" value="/flash/banner.swf" />
+            <param name="quality" value="high" />
+            <embed src="/flash/banner.swf" quality="high"
+              pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"
+              type="application/x-shockwave-flash" width="533" height="162"></embed>
+          </object>
+        </noscript></div>
+      <div id="conten">
+        <div id="contenbai"><img src="images/index_10.jpg" /></div>
+        <div id="contenone">
+          <div id="welcomeword">
+            <div id="people"><img src="images/index_11.jpg" /></div>
+            <div id="word">
+              <p onMouseMove="hello()">欢迎光临孔雀摄影工作室，缘于一群年轻人的创作激情与执着,致力于时尚婚纱摄影、人体摄影、时装广告摄影等方面的创作。</p>
+              <script language="VBScript">
+                sub hello
+                document.fgColor = int(256 * 256 * 256 * rnd)
+                end sub
+              </script>
+            </div>
+          </div>
+          <div id="lineone"><img src="images/index_20.jpg" /></div>
+          <div id="productone"><img src="images/index_21.jpg" /></div>
+          <div id="showone"><img src="images/index_23.jpg" /></div>
+          <div id="showtwo"><img src="images/index_24.jpg" /></div>
+          <div id="showtwoword">
+            <p>&nbsp;</p>
+            <p><img src="images/index_16.jpg" width="3" height="5" />　摘　要　　　　<img src="images/index_16.jpg" width="3"
+                height="5" /> 人文风光　　　　<img src="images/index_16.jpg" width="3" height="5" /> 商业摄影</p>
+            <p>&nbsp;</p>
+            <p><img src="images/index_16.jpg" width="3" height="5" />　人　物　　　　<img src="images/index_16.jpg" width="3"
+                height="5" /> 民族风情　　　　<img src="images/index_16.jpg" width="3" height="5" /> 建筑摄影</p>
+            <p>&nbsp;</p>
+            <p><img src="images/index_16.jpg" width="3" height="5" />　动　物　　　　<img src="images/index_16.jpg" width="3"
+                height="5" /> 城市容貌　　　　<img src="images/index_16.jpg" width="3" height="5" /> 广告摄影</p>
+            <p>&nbsp;</p>
+            <p><img src="images/index_16.jpg" width="3" height="5" />　天　空　　　　<img src="images/index_16.jpg" width="3"
+                height="5" /> 时尚生活　　　　<img src="images/index_16.jpg" width="3" height="5" /> 其他摄影</p>
+            <p>&nbsp;</p>
+          </div>
+        </div>
+        <div id="linetwo"><img src="images/index_08.jpg" /></div>
+        <div id="producttwo"><img src="images/index_09.jpg" /></div>
+        <div id="contentwo">
+          <p>&nbsp;</p>
+          <p><img src="images/index_13.jpg" /></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer"><img src="images/index_28.jpg" /></dir>
+    <script>
+      function scrollit_r2l(seed) {
+        // 流动标语
+        var m1 = "欢迎光临本站，一流的摄影技术将为您提供一流服务！";
+        var m2 = "";
+        var msg = m1 + m2;
+        var out = " ";
+        var c = 1;
+        var speed = 140;
+        if (seed > 100) {
+          seed -= 2;
+          var cmd = "scrollit_r2l(" + seed + ")";
+          timerTwo = window.setTimeout(cmd, speed);
+        }
+        else if (seed <= 100 && seed > 0) {
+          for (c = 0; c < seed; c++) { out += " "; }
+          out += msg; seed -= 2;
+          var cmd = "scrollit_r2l(" + seed + ")";
+          window.status = out;
+          timerTwo = window.setTimeout(cmd, speed);
+        }
+        else if (seed <= 0) {
+          if (-seed < msg.length) {
+            out += msg.substring(-seed, msg.length);
+            seed -= 2;
+            var cmd = "scrollit_r2l(" + seed + ")";
+            window.status = out;
+            timerTwo = window.setTimeout(cmd, speed);
+          }
+          else {
+          window.status = " ";
+            timerTwo = window.setTimeout("scrollit_r2l(100)", speed);
+          }
+        }
+      }
+      scrollit_r2l(100);
+    </script>
+</body>
+
+</html>

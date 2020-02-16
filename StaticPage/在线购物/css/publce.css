@@ -1,0 +1,13 @@
+/* CSS Document */
+
+body{ margin:0; padding:0; font-family:"ËÎÌו"; font-size:12px; color:#666;}
+html,image,p,span,input,form,ul,li{ margin:0; padding:0;}
+ul,li{ list-style-type:none;}
+
+
+.clean{ clear:both;}
+
+.gray_line{ width:980px; height:1px; background:#E6E6E6; margin-top:10px; overflow:hidden;}
+.line1{ width:980px; height:1px; background:#A57CAE; overflow:hidden;}
+.line2{ width:980px; height:1px; background:#6D8C45; overflow:hidden;}
+.line3{ width:980px; height:1px; background:#41A4C2; overflow:hidden;}

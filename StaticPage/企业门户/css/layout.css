@@ -1,0 +1,39 @@
+#top,#banner,#mainbody,#bottom,#sonmainbody{ margin:0 auto;}
+#top{ width:960px; height:136px;}
+ #header{ height:58px; background-image:url(../images/header-bg.jpg)}
+  #logo{ float:left; padding-top:16px; margin-left:20px; display:inline;}
+  #search{ float:right; width:444px; height:26px; padding-top:19px; padding-right:28px;}
+   .s1{ float:left; height:26px; line-height:26px; padding-right:10px;}
+   .s2{ float:left; width:204px; height:26px; padding-right:10px;}
+    .seaarch-text{ width:194px; height:16px; padding-left:10px; line-height:16px; vertical-align:middle; padding-top:5px; padding-bottom:5px; background-image:url(../images/search-bg.jpg); color:#343434;background-repeat: no-repeat;}
+   .s3{ float:left; width:20px; height:23px; padding-top:3px;}
+    .search-btn{ height:20px;}
+ #menu{ width:948px; height:73px; background-image:url(../images/menu-bg.jpg); background-repeat:no-repeat; padding-left:12px; padding-top:5px;}
+#banner{ width:960px; height:365px; padding-bottom:15px;}
+#mainbody{ width:960px; margin-bottom:25px;}
+ #actions,#idea{ height:173px;width:355px; float:left; margin-right:15px; display:inline;}
+  .actions-title{ color:#FFFFFF; height:34px; width:355px; background-image:url(../images/action-titleBG.gif);}
+  .actions li{float:left;display:block;cursor:pointer;text-align:center;font-weight:bold;width: 66px;height: 34px ;line-height: 34px; padding-right:1px;}
+  .hover{ padding:0px; width:66px; color:#76B900; font-weight:bold; height:34px; line-height:34px; background-image: url(../images/action-titleBGhover.gif);}
+  .action-content{ height:135px; width:353px; border-left:1px solid #cecece; border-right:1px solid #cecece;}
+  .text1{height:121px; width:345px; padding-left:8px; padding-top:14px;}
+  .text1 dt,.text1 dd{ float:left;}
+  .text1 dd{ margin-left:18px; display:inline;}
+  .text1 dd p{ line-height:22px; padding-top:5px; padding-bottom:5px;}
+   h1{ font-size:12px;}
+   .list{ height:121px; padding-left:8px; padding-top:14px; padding-right:8px; width:337px;} 
+   .list li{ background: url(../images/line.gif) repeat-x bottom; /*列表底部的虚线*/ width: 100%; } 
+   .list li a{display: block; padding: 6px 0px 4px 15px; background: url(../images/oicn-news.gif) no-repeat 0 8px;    /*列表左边的箭头图片*/ overflow:hidden; } 
+   .list li span{ float: right;/*使span元素浮动到右面*/ text-align: right;/*日期右对齐*/ padding-top:6px;} 
+/*注意:span一定要放在前面,反之会产生换行*/
+  .idea-title{ font-weight:bold; color:##76B900; height:24px; width:345px; background-image:url(../images/idea-titleBG.gif); padding-left:10px; padding-top:10px;}
+ #quicklink{ height:173px; width:220px; float:right; background:url(../images/linkBG.gif);}
+  .btn1{ height:24px; line-height:24px; margin-left:10px; margin-top:62px;}
+ #bottom{ width:960px;}
+  #rss{ height:30px; width:960px; line-height:30px; background-image:url(../images/link3.gif);}
+   #rss-left{ float:left; height:30px; width:2px;}
+   #rss-right{ float:right; height:30px; width:2px;}
+   #rss-center{ height:30px; line-height:30px; padding-left:18px; width:920px; float:left;}
+  #contacts{ height:36px; line-height:36px;}
+  
+

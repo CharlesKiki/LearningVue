@@ -1,0 +1,12 @@
+a:link,a:visited,a:active{ text-decoration:none; color:#343434;}
+a:hover{ text-decoration:underline; color:#5F5F5F;}
+
+a.green:link,a.green:visited,a.green:active{ text-decoration:none; color:#76B900;}
+a.green:hover{ text-decoration:underline; color:#76B900;}
+.green{color:#76B900;}
+
+a.white:link,a.white:visited,a.white:active{ text-decoration:none; color:#ffffff;}
+a.white:hover{ text-decoration:underline; color:#ffffff;}
+.white{color:#ffffff;}
+
+.font10{font-family:Arial, Helvetica, sans-serif; font-size:10px;}
